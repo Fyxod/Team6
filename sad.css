@@ -1,0 +1,148 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(135deg, #729fcf, #a0c3f7, #c6defd);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  gap: 30px;
+  padding: 30px;
+  width: 95%;
+  max-width: 1300px;
+  height: 520px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Left Panel - Song Title */
+.left-panel {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+  height:88%;
+}
+
+.middle-panel {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 85%;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.player-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-panel iframe {
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.middle-panel iframe:hover {
+  transform: scale(1.01);
+}
+
+/* Beautified Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.controls button {
+  background: #fff;
+  color: #295c91;
+  border: none;
+  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #e3f1ff;
+  transform: scale(1.1);
+}
+
+
+/* Right Panel - Song List */
+.right-panel {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  height: 88%;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+}
+
+.right-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-panel::-webkit-scrollbar-thumb {
+  background: #ffffff80;
+  border-radius: 10px;
+}
+
+#song-list button {
+  color: #295c91;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#song-list button:hover {
+  background-color: #e0f0ff;
+}
