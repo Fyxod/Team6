@@ -1,5 +1,5 @@
 const API_KEY = "AIzaSyBkCbrIopKUkeeSZ0mwghMH6_g226WLR0o";
-const PLAYLIST_ID = "PLzTcs3XW84t3L9A-_BwIfb4vSH2jcgxvE";
+const PLAYLIST_ID = "PLzTcs3XW84t3_wzJI2RRduaH7nQ1i0JXn";
 let videos = [];
 let currentIndex = 0;
 

@@ -15,23 +15,37 @@ app.get('/sad', (req, res) => {
   res.sendFile(path.join(__dirname, 'sad.html'));
 });
 app.use('/js', express.static(__dirname + '/js'));
+app.get('/self', (req, res) => {
+  res.sendFile(path.join(__dirname, 'selfcare.html'));
+});
 
 
 // Main page (after login)
 app.get('/main', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
+app.get('/happy', (req, res) => {
+  res.sendFile(path.join(__dirname, 'happy.html'));
+});
+app.get('/chill', (req, res) => {
+  res.sendFile(path.join(__dirname, 'chill.html'));
+});
 
 // Login page (contact.html)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'contact.html'));
 });
-
+app.get('/hype', (req, res) => {
+  res.sendFile(path.join(__dirname, 'hype.html'));
+});
 // Signup page (signup.html)
 app.get('/signup', (req, res) => {
   res.sendFile(path.join(__dirname, 'signup.html'));
 });
 
+app.get('/relaxed', (req, res) => {
+  res.sendFile(path.join(__dirname, 'relaxed.html'));
+});
 // Handle general form (you can remove if unused)
 app.post('/submit', (req, res) => {
   const { username, email } = req.body;

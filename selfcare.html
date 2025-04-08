@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self-Care</title>
+    <link rel="stylesheet" href="/css/selfcare.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/main"><img src="images/previous2.png" height="35px" width="60px" /></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Journal Section -->
+        <div class="journal">
+            HEY! Want to share something?
+    
+            <div class="entries">
+              <!-- Entries will appear here -->
+            </div>
+          
+            <button class="new-entry">New Entry +</button>
+          
+            <div class="entry-form" style="display: none;">
+              <textarea class="entry-input" placeholder="Write something..."></textarea>
+              <button class="save-entry">Save</button>
+            </div>
+          </div>
+          
+          
+
+       
+
+        <!-- Breathing Exercise -->
+        <div class="breathe-box">
+            <div class="controls">
+                <button class="btn active">Breathe</button>
+                <button class="btn">Hold</button>
+                <button class="btn">Release</button>
+            </div>
+            <div id="status">Ready?</div>
+
+            <div class="circle">
+                <span id="timer">10</span>
+            </div>
+            <button class="play">&#9654;</button>
+            <div class="instructions">
+                <h3>How to Use:</h3>
+                <ul>
+                  <li><strong>Breathe</strong> – Inhale slowly for 4 seconds</li>
+                  <li><strong>Hold</strong> – Hold your breath for 7 seconds</li>
+                  <li><strong>Release</strong> – Exhale slowly for 8 seconds</li>
+                </ul>
+              </div>
+              
+        </div>
+    </div>
+
+    <script src="/js/selfcare.js"></script>
+</body>
+</html>

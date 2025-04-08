@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
-  background: linear-gradient(135deg, #729fcf, #a0c3f7, #c6defd);
+  background: linear-gradient(to right, #c4fbc8, #a0e6b2);;
   background-size: 400% 400%;
   height: 100vh;
   display: flex;
@@ -147,7 +147,8 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-top:10px;
+
 }
 
 nav ul li {
@@ -183,4 +184,7 @@ nav ul li {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
+}
+a{
+    color:white;
 }
